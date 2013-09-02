@@ -1,0 +1,5 @@
+syn keyword cppfunction 	cout cin
+
+:source ~/.vim/syntax/cppIO_STRING.vim
+:source ~/.vim/syntax/cppCLASS.vim
+:source ~/.vim/syntax/cppSYSTEMCALL.vim
