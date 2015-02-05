@@ -51,3 +51,6 @@ function! EqualSign(char)
     endif
 endf
 "==============================
+"绑定python专有的快捷键
+nmap <F9> :w<BAR>!python<space>%<CR>
+imap <F9> <ESC>:w<BAR>!python<space>%<CR>
