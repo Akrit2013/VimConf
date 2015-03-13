@@ -1,4 +1,5 @@
-:source $VIM/syntax/cppSYSTEMCALL.vim "just for MSWIN
+:source $VIMDIR/syntax/cppSYSTEMCALL.vim "just for MSWIN
+":source syntax/cppSYSTEMCALL.vim "just for MSWIN
 
 " Vim syntax file
 " Language:	C++ special highlighting for STL classes and methods
