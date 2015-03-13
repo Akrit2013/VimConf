@@ -70,14 +70,14 @@ else
 	"
 	" user / system wide installation (Linux/Unix)
 	"
-	if match( expand("<sfile>"), $VIM ) >= 0
+	"if match( expand("<sfile>"), $VIM ) >= 0
 		" system wide installation 
-		let s:plugin_dir  = $VIM.'/vimfiles/'
-		let s:installation	= 'system'
-	else
+	"	let s:plugin_dir  = $VIM.'/vimfiles/'
+	"	let s:installation	= 'system'
+	"else
 		" user installation assumed
 		let s:plugin_dir  = $HOME.'/.vim/'
-	endif
+	"endif
 	"
 	let s:C_CodeSnippets   = $HOME.'/.vim/c-support/codesnippets/'
 	let s:C_IndentErrorLog = $HOME.'/.indent.errorlog'
