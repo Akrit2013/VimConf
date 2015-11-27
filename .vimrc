@@ -73,7 +73,8 @@ set foldmethod=syntax
 set directory=/tmp 	"set swp file path
 set bdir=/tmp
 "set backupdir=D:\\tmp 	"set backup file path, just for mswin
-set guifont=Consolas\ 12 	"set font and size under MSWIN
+"set guifont=Consolas\ 12 	"set font and size under MSWIN
+set guifont=Monaco\ 12 		"Use mac style font, can be download from monaco-font on github
 "set guifont=simsun\ 10
 """""""""""""""""""""""""""""""""""""""
 " The config for the taglist plugin

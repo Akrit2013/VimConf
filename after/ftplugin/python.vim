@@ -14,7 +14,7 @@ autocmd BufWritePost *.py call Flake8()
 let python_highlight_all = 1
 
 "自动在+ - * =符号两边添加空格
-let g:equ=1
+"let g:equ=1
 "设置= + - * 前后自动空格
 if exists("g:equ")
 inoremap = <c-r>=EqualSign('=')<CR>
