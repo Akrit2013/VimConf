@@ -50,6 +50,15 @@ set showcmd
 " 启动函数变量快速浏览的时间设置
 "set updatetime=100  " It will auto search tag fills sometimes
 "set backspace=indent,eol,start!
+"
+" Change the tab indent to 4 spaces
+set shiftwidth=4
+set softtabstop=4
+set tabstop=4
+
+" Do not use space to simulate the tab
+set noexpandtab
+
 set number!
 set cindent!
 set ruler!
@@ -73,7 +82,8 @@ set foldmethod=syntax
 set directory=/tmp 	"set swp file path
 set bdir=/tmp
 "set backupdir=D:\\tmp 	"set backup file path, just for mswin
-set guifont=Consolas\ 12 	"set font and size under MSWIN
+"set guifont=Consolas\ 12 	"set font and size under MSWIN
+set guifont=Monaco\ 12 		"Use mac style font, can be download from monaco-font on github
 "set guifont=simsun\ 10
 """""""""""""""""""""""""""""""""""""""
 " The config for the taglist plugin
@@ -197,3 +207,4 @@ map <leader>td <Plug>TaskList
 " Disable the menu bar and icon bar
 set guioptions-=m
 set guioptions-=T
+
