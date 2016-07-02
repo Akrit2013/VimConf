@@ -2,6 +2,24 @@
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
 
+"Enable the python completion for YouCompleteMe
+let g:ycm_python_binary_path = '/usr/bin/python'
+"Enable the YouCompleteMe works in text file
+"let g:ycm_filetype_blacklist={'text':0}
+let g:ycm_filetype_blacklist={'txt':0}
+"Clear the blacklist
+let g:ycm_filetype_blacklist={'*':0}
+"Set the YouCompleteMe auto jump function
+nnoremap <leader>j :YcmCompleter GoToDefinitionElseDeclaration<CR>
+"Enable YCM to complete comment
+let g:ycm_complete_in_comments = 1
+"Enable YCM to complete in strings
+let g:ycm_complete_in_strings = 1
+"Enable YCM collect identifier from comment and string
+let g:ycm_collect_identifiers_from_comments_and_strings = 0
+"Enable YCM collect identifier from the tag files
+let g:ycm_collect_identifiers_from_tags_files = 0
+
 "============================================
 set nocompatible
 source $VIMRUNTIME/vimrc_example.vim
